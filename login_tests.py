@@ -11,7 +11,7 @@ USERNAME = '' #username / user_email
 PASSWORD = '' #password
 BROWSERS = {'firefox': webdriver.Firefox, 'chrome': webdriver.Chrome}
 
-class BlacklaneTest(unittest.TestCase):
+class LoginTest(unittest.TestCase):
   
   @classmethod
   def setUp(cls):
