@@ -85,7 +85,7 @@ class CookiesLogin(UserLogin):
   def __load_cookies(self):
     with open(self.cookies_path, "r") as infile:
       data = json.load(infile)
-    self.driver.get(URL)
+    self.driver.get(self.url)
     for i in data['cookies']:
       self.driver.add_cookie(i)
     self.driver.refresh()
